@@ -30,8 +30,7 @@ const ARComponent = () => {
   useEffect(() => {
     const handleMarkerFound = () => {
       console.log("Marker found");
-      // Contoh userId, sesuaikan dengan logika aplikasi Anda
-      const userId = "user123";
+      const userId = "user123"; // Ganti dengan logika untuk mendapatkan userId
       sendDataToDatabase(userId);
     };
 
@@ -62,8 +61,6 @@ const ARComponent = () => {
       {isCameraActive && (
         <a-scene embedded arjs="sourceType: webcam;">
           <a-marker type="pattern" url="/pattern-pas_foto.patt">
-            {" "}
-            {/* Path marker pattern di folder public */}
             <a-image
               src="/pattern-pas_foto.png"
               position="0 0 0"
